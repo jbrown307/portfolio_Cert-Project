@@ -1,0 +1,127 @@
+/* TODO
+- add animation effects to navbar, project links, and social media links 
+- add new text
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* ---------- general ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* padding-top: 3rem; */
+}
+
+/* ---------- navbar ---------- */
+#navbar-mainContainer {
+    border: solid 1px red;
+    background-color: lightblue;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    width: 100%;
+    padding: 0.75rem;
+    
+    display: flex;
+    justify-content: end;
+}
+
+/* ---------- welcome ----------*/
+#welcome-section {
+    border: solid 1px red;
+    background-color: lightsalmon;
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    
+}
+    .welcome-text {
+        border: solid 1px blue;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 50%;
+    }
+
+    .port-picture {
+    padding: 1rem;
+    width: 100%
+    }
+
+    /* ---------- projects ---------- */
+    #projects-mainContainer {
+        border: solid 1px red;
+        background-color: lightblue;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+        .projects-text {
+            border: solid 1px blue;
+          
+        }
+        
+        .project-grid {
+            border: solid 1px blue;
+           
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+            
+        .project-grid-item {
+            border: solid 1px black;
+
+            }
+
+    /* ---------- social links ---------- */
+    #social-links-mainContainer {
+    border: solid 1px red;
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    }
+        .social-links-text {
+            border: solid 1px blue;
+
+            text-align: center;
+        }
+
+        .social-links-bar-subContainer {
+            border: solid 1px blue;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            width: 50%;
+        }
+
+    /* ---------- footer ---------- */
+    .footer {
+    border: solid 1px red;
+    background-color: lightblue;
+
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+
+
