@@ -1,6 +1,6 @@
 /* TODO
-- add animation effects to navbar, project links, and social media links 
-- add new text
+- 
+- 
 */
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -14,7 +14,7 @@
 }
 
 body {
-    /* padding-top: 3rem; */
+    padding-top: 3rem;
 }
 
 /* ---------- navbar ---------- */
@@ -55,8 +55,8 @@ body {
     }
 
     .port-picture {
-    padding: 1rem;
-    width: 100%
+        padding: 1rem;
+        width: 50%
     }
 
     /* ---------- projects ---------- */
@@ -68,6 +68,8 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+
+        
     }
         .projects-text {
             border: solid 1px blue;
@@ -79,24 +81,39 @@ body {
            
 
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+           
+           
+
+            padding: 1rem;
+
+            width: 50%;
         }
             
         .project-grid-item {
             border: solid 1px black;
 
+            padding: 2rem;
+            }
+
+            .project-sh {
+                width: 100%
+            }
+
+            .project-title {
+                text-align: center;
+                padding: 0.5rem;
             }
 
     /* ---------- social links ---------- */
     #social-links-mainContainer {
-    border: solid 1px red;
-    background-color: lightsalmon;
+        border: solid 1px red;
+        background-color: lightsalmon;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
         .social-links-text {
             border: solid 1px blue;
@@ -112,6 +129,8 @@ body {
 
             width: 50%;
         }
+
+        
 
     /* ---------- footer ---------- */
     .footer {
