@@ -1,5 +1,5 @@
 /* TODO
-- 
+- fix gird to have equal amount of projects on each row 
 - 
 */
 
@@ -14,7 +14,11 @@
 }
 
 body {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
+}
+
+img {
+    width: 100%;
 }
 
 /* ---------- navbar ---------- */
@@ -41,23 +45,44 @@ body {
     display: flex;
     height: 100vh;
     justify-content: center;
+    flex-direction: column;
     
 }
-    .welcome-text {
-        border: solid 1px blue;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+.welcome_container {
+    border: solid 1px blue;
 
-        width: 50%;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .port-picture {
-        padding: 1rem;
-        width: 50%
-    }
+        .welcome_headings {
+            border: solid 1px blue;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .welcome_image {
+            border: solid 1px blue;
+
+            padding: 1rem;
+            width: 20%;
+        }
+
+        .welcome_text {
+            border: solid 1px blue;
+
+            width: 50%;
+            padding: 1rem;
+
+        }
 
     /* ---------- projects ---------- */
     #projects-mainContainer {
@@ -68,6 +93,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 1rem;
 
         
     }
@@ -81,13 +107,12 @@ body {
            
 
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(3, minmax(320px, 1fr));
            
-           
-
+        
             padding: 1rem;
 
-            width: 50%;
+            width: 75%;
         }
             
         .project-grid-item {
@@ -97,7 +122,7 @@ body {
             }
 
             .project-sh {
-                width: 100%
+                aspect-ratio: 2 / 1;
             }
 
             .project-title {
@@ -105,8 +130,8 @@ body {
                 padding: 0.5rem;
             }
 
-    /* ---------- social links ---------- */
-    #social-links-mainContainer {
+    /* ---------- social ---------- */
+    #social_container {
         border: solid 1px red;
         background-color: lightsalmon;
 
@@ -114,24 +139,46 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding:1rem;
     }
-        .social-links-text {
+
+        .social-text {
             border: solid 1px blue;
 
             text-align: center;
+            padding: 1rem;
         }
 
-        .social-links-bar-subContainer {
+        .social-links_container {
             border: solid 1px blue;
 
             display: flex;
-            justify-content: space-evenly;
+            padding: 1rem;
+            justify-content: space-between;
 
             width: 50%;
+
         }
 
-        
+            .social-link_flexbox {
+                border: solid 1px blue;
+                
+                display: flex;
+            }
 
+                .social-icon {
+                    border: solid 1px green;
+
+                    width: 2rem;
+                }
+
+                .social-link {
+                    border: solid 1px green;
+
+                    line-height: 2rem;
+                    margin-left: 0.5rem;
+                }
+    
     /* ---------- footer ---------- */
     .footer {
     border: solid 1px red;
@@ -140,6 +187,7 @@ body {
     display: flex;
     justify-content:space-evenly;
 }
+
 
 
 

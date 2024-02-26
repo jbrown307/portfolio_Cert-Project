@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
+
     <title>Personal Portfolio</title>
 </head>
 
@@ -16,7 +17,7 @@
         <ul>
           <a href="#welcome-section">About</a>
           <a href="#projects-mainContainer">Work</a>
-          <a href="#social-links-mainContainer">Contact</a>
+          <a href="#social_container">Contact</a>
         </ul>
       </section>
   </header>
@@ -25,14 +26,25 @@
 <!---------- welcome ---------->
 <main>
   <section id="welcome-section">
-    <div class="welcome-text">
-      <h1>Welcome! I'm Jordan</h1>
-      <p>aspiring web developer</p>
-      <img
-      class="port-picture"
-      src="https://avatars.githubusercontent.com/u/149628253?v=4"
-      alt="professional headshot of Jordan">
+    <div class="welcome_container">
+      <div class="welcome_image">
+        <img
+        class="port-picture"
+        src="https://avatars.githubusercontent.com/u/149628253?v=4"
+        alt="professional headshot of Jordan">
+      </div>
+        
+      <div class="welcome_headings">
+        <h1>Welcome! I'm Jordan</h1>
+        <p>aspiring web developer</p>
+        </div>
+      
+      <div class="welcome_text">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea hic perferendis ex culpa repellendus delectus ullam ut esse quibusdam enim voluptatem aperiam sunt, aspernatur harum quam, odit dolore voluptas. Amet molestias ex quisquam nulla odio saepe nihil error rerum delectus, omnis officiis temporibus cupiditate maiores tempore inventore aut corporis iure magnam pariatur veniam mollitia eveniet voluptatum soluta? Impedit, voluptatibus inventore in totam reiciendis maxime corporis veritatis dolorem incidunt, omnis vel dignissimos consectetur! Obcaecati iusto architecto dolores voluptates? Mollitia temporibus maiores reiciendis et praesentium magnam iusto ratione eveniet, ipsum earum, harum veniam accusantium. Adipisci autem corrupti, nesciunt delectus unde doloremque veniam.</p>
+      </div>
     </div>
+
+
   </section>
 
 <!---------- projects ---------->
@@ -91,31 +103,63 @@
     <button>Show all</button></a>
   </section>
 
-  <!---------- social links ---------->
-  <section id="social-links-mainContainer">
-    <div class="social-links-text">
-      <h2>Let's work together...</h2>
-      <p class="social-links-subheading">Let's get in touch!</p>
-    </div>
-    <div class="social-links-bar-subContainer">
-      <div class="link-item">
-        <a href="https://github.com/jbrown307" target="_blank">GitHub</a>
-      </div>
-      
-      <div class="link-item">
-        <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank">LinkedIn</a>
-      </div>
-      
-      <div class="link-item">
-        <a href="mailto:jordanbrown@protonmail.com">Send an email</a>
-      </div>
+  <!---------- social ---------->
+  <section id="social_container">
 
-      <div class="link-item">
-        <a href="tel:+674-470-27**">Call Me</a>
-      </div>
+    <div class="social-text">
+      <h2>Let's work together...</h2>
+      <p>Let's get in touch!</p>
+    </div>
+
+    <div class="social-links_container">
+
+      <a href="https://github.com/jbrown307" target="_blank">
+        <div class="social-link_flexbox">
+          <div class="social-icon">
+            <img src="https://raw.githubusercontent.com/jbrown307/portfolio_CertProject/master/github_icon.png">
+          </div>
+          <div class="social-link">
+            GitHub
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/jordanbrownca/" target="_blank">
+        <div class="social-link_flexbox">
+          <div class="social-icon">
+            <img src="https://raw.githubusercontent.com/jbrown307/portfolio_CertProject/master/linkedin_icon.png">
+          </div>
+          <div class="social-link">
+            LinkedIn
+          </div>
+        </div>
+      </a>
+
+      <a href="mailto: jordanbrown@protonmail.com" target="_blank">
+        <div class="social-link_flexbox">
+          <div class="social-icon">
+            <img src="https://raw.githubusercontent.com/jbrown307/portfolio_CertProject/master/email_icon.png">
+          </div>
+          <div class="social-link">
+            Email
+          </div>
+        </div>
+      </a>
+
+      <a href="tel: 67447021**" target="_blank">
+        <div class="social-link_flexbox">
+          <div class="social-icon">
+            <img src="https://raw.githubusercontent.com/jbrown307/portfolio_CertProject/master/phone_icon.png">
+          </div>
+          <div class="social-link">
+            Phone
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 </main>
+
   <!---------- footer ---------->
   <footer>
     <section class="footer">
