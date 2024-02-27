@@ -1,9 +1,11 @@
-/* TODO
-- 
-- 
-*/
-
 /* Large devices (laptops/desktops, 992px and up) */
+
+/* ---------- variables ---------- */
+:root {
+    --nav-color: #3c887e;
+    --accent-color1: #2a2b2a; 
+    --accent-color2: #d7dedc; 
+  }
 
 /* ---------- general ---------- */
 * {
@@ -14,81 +16,118 @@
 }
 
 body {
-    /* padding-top: 3rem; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: var(--accent-color1);
+    color: white;
+    font-size: 2rem;
+
+    border: none;
+    
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+    button:hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }
+
 /* ---------- navbar ---------- */
 #navbar {
-    border: solid 1px red;
-    background-color: lightblue;
+    /* border: solid 1px red; */
+    
+    background-color: var(--nav-color);
 
     position: fixed;
     top: 0;
     z-index: 999;
 
     width: 100%;
+    height: 5rem;
     padding: 1rem;
     
     display: flex;
     justify-content: end;
+    align-items: center;
 }
+
+    .nav-links > a {
+        font-size: 2rem;
+
+        margin-left: 3rem;
+    }
+
+        a:hover {
+            color:var(--accent-color2);
+        }
 
 /* ---------- welcome ----------*/
 #welcome-section {
-    border: solid 1px red;
-    background-color: lightsalmon;
+    /* border: solid 1px red; */
+
+    background-color: var(--accent-color1);
+    color: white;
 
     display: flex;
-    height: 100vh;
     justify-content: center;
     flex-direction: column;
-    
+
+    height: 100vh;
 }
 
 .welcome_container {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    
 }
 
         .welcome_headings {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
 
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
 
-            width: 50%;
+            width: 75%;
             padding: 1rem;
+
+            font-size: 3rem;
+            text-align: center;
         }
+
+            .welcome_headings > p {
+                font-style: italic;
+                font-size: 2rem;
+            }
 
         .welcome_image {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
 
             padding: 1rem;
-            width: 20%;
-        }
-
-        .welcome_text {
-            border: solid 1px blue;
-
-            width: 50%;
-            padding: 1rem;
+            width: 30%;
         }
 
     /* ---------- projects ---------- */
     #projects {
-        border: solid 1px red;
-        background-color: lightblue;
+        /* border: solid 1px red; */
+
+        background-color: var(--accent-color2);
 
         display: flex;
         flex-direction: column;
@@ -98,16 +137,15 @@ img {
 
     }
         .projects-text {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
 
             text-align: center;
-          
+            font-size: 2rem;
         }
         
         .project-grid {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
            
-
             display: grid;
             grid-template-columns: repeat(3, minmax(320px, 1fr));
            
@@ -118,7 +156,7 @@ img {
         }
             
         .project-grid-item {
-            border: solid 1px black;
+            /* border: solid 1px black; */
 
             padding: 2rem;
             }
@@ -130,73 +168,126 @@ img {
             .project-title {
                 text-align: center;
                 padding: 0.5rem;
+
+                font-size: 2rem;
+                background-color: #2a2b2a;
+                color:white;
+                border-radius: 0.5rem;
             }
+
+            .project-grid-item:hover{
+                background-color: var(--accent-color1);
+                opacity: 75%;
+                transform: scale(1.1);
+                transition-duration: 500ms;
+            }
+
 
     /* ---------- social ---------- */
     #social_container {
-        border: solid 1px red;
-        background-color: lightsalmon;
+        /* border: solid 1px red; */
+
+        background-color: var(--accent-color1);
+        color: white;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding:1rem;
+        padding: 1rem;
     }
 
         .social-text {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
 
             text-align: center;
+
             padding: 1rem;
+            font-size: 1.5rem;
         }
 
         .social-links_container {
-            border: solid 1px blue;
+            /* border: solid 1px blue; */
 
             display: flex;
             padding: 1rem;
             justify-content: space-between;
 
-            width: 50%;
+            width: 60%;
 
         }
 
             .social-link_flexbox {
-                border: solid 1px blue;
+                /* border: solid 1px blue; */
                 
                 display: flex;
             }
+            
+                .social-link_flexbox:hover {
+                    /* background-color: green; */
+
+                    transition-duration: 500ms;
+                    transform: translate(0, -10px);
+                }
 
                 .social-icon {
-                    border: solid 1px green;
+                    /* border: solid 1px green; */
 
                     width: 2rem;
                 }
 
                 .social-link {
-                    border: solid 1px green;
+                    /* border: solid 1px green; */
+
+                    color: white;
 
                     line-height: 2rem;
                     margin-left: 0.5rem;
+                    font-size: 2rem;
                 }
     
     /* ---------- footer ---------- */
     .footer {
-    border: solid 1px red;
-    background-color: lightblue;
+    /* border: solid 1px red; */
+    background-color: #d7dedc;
 
-    display: flex;
-    justify-content:space-evenly;
+    height: 5rem;
+
+    font-style: italic;
+    line-height: 5rem;
+    text-align: center;
 }
 
-/* ---------- media query ---------- */
 /* Extra small devices (phones, 600px and down) */
+
+/* ---------- media query ---------- */
 @media (max-width: 600px) { 
 
     /* ---------- general ---------- */
     body {
-        padding-top: 3rem;
+        padding-top: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    
+        border: none;
+        
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+
+    /* ---------- navbar ---------- */
+    #navbar {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .nav-links > a {
+        font-size: 1rem;
+
+        margin-left: 1.5rem;
     }
     
     /* ---------- welcome ----------*/
@@ -207,20 +298,62 @@ img {
         .welcome_image {
             width: 50%;
         }
+
+        .welcome_headings {
+            font-size: 1rem;
+        }
+
+        .welcome_headings > p {
+            font-style: italic;
+            font-size: 0.5rem;
+        }
     
-            .welcome_text {
-                display: none;
+        .welcome_text {
+            display: none;
         }
     
     /* ---------- projects ---------- */
     .project-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        width: 85%;
+    }
+
+    .projects-text {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        text-align: center;
+        padding: 0.5rem;
+
+        font-size: 1rem;
+    }
+
+    .project-grid-item {
+        padding: 1rem;
     }
     
     /* ---------- social ---------- */
     .social-links_container {
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+
         width: fit-content;
+        
     }
+
+        .social-text {
+            font-size: 1rem;
+        }
+
+    /* ---------- footer ---------- */
+        .footer {
+            height: 1rem;
+            font-size: 0.5rem;
+            line-height: 1rem;
+        }
 
 }
 

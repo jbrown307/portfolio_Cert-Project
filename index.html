@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Personal Portfolio</title>
 </head>
 
 <body>
   <!---------- navbar ---------->
   <nav id="navbar">
-      <ul>
+      <ul class="nav-links">
         <a href="#welcome-section">About</a>
-        <a href="#projects-mainContainer">Work</a>
+        <a href="#projects">Work</a>
         <a href="#social_container">Contact</a>
       </ul>
   </nav>
@@ -33,10 +37,7 @@
         <h1>Welcome! I'm Jordan</h1>
         <p>aspiring web developer</p>
       </div>
-      <div class="welcome_text">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea hic perferendis ex culpa repellendus delectus ullam ut esse quibusdam enim voluptatem aperiam sunt, aspernatur harum quam, odit dolore voluptas. Amet molestias ex quisquam nulla odio saepe nihil error rerum delectus, omnis officiis temporibus cupiditate maiores tempore inventore aut corporis iure magnam pariatur veniam mollitia eveniet voluptatum soluta? Impedit, voluptatibus inventore in totam reiciendis maxime corporis veritatis dolorem incidunt, omnis vel dignissimos consectetur! Obcaecati iusto architecto dolores voluptates? Mollitia temporibus maiores reiciendis et praesentium magnam iusto ratione eveniet, ipsum earum, harum veniam accusantium. Adipisci autem corrupti, nesciunt delectus unde doloremque veniam.</p>
       </div>
-    </div>
   </section>
 
 <!---------- projects ---------->
@@ -49,7 +50,8 @@
       <div class="project-grid">
         <a href="https://jbrown307.github.io/product-landing_CertProject/" 
         target="_blank"
-        id="profile-link">
+        id="profile-link"
+        alt="screenshot of product landing page project">
         <div class="project-grid-item">
         <img
         class="project-sh"
@@ -59,7 +61,8 @@
 
       <a href="https://jbrown307.github.io/grid-magazine/" 
       target="_blank"
-      id="profile-link">
+      id="profile-link"
+      alt="screenshot of grid magazine project">
       <div class="project-grid-item">
         <img
         class="project-sh"
@@ -69,7 +72,8 @@
 
       <a href="https://jbrown307.github.io/city-skyline/" 
       target="_blank"
-      id="profile-link">
+      id="profile-link"
+      alt="screenshot of city skyline project">
       <div class="project-grid-item">
         <img
         class="project-sh"
@@ -79,7 +83,8 @@
 
       <a href="https://jbrown307.github.io/tribute-page_CertProject/" 
       target="_blank"
-      id="profile-link">
+      id="profile-link"
+      alt="screenshot of city tribute page project">
       <div class="project-grid-item">
         <img
         class="project-sh"
@@ -89,7 +94,8 @@
 
       <a href="https://jbrown307.github.io/tech-doc_CertProject/" 
       target="_blank"
-      id="profile-link">
+      id="profile-link"
+      alt="screenshot of technical documentation project">
       <div class="project-grid-item">
         <img
         class="project-sh"
@@ -100,7 +106,8 @@
       <a href="https://jbrown307.github.io/survey-form_CertProject/" 
       target="_blank"
       id="profile-link"
-      ><div class="project-grid-item">
+      alt="screenshot of survey form project">
+      <div class="project-grid-item">
         <img
         class="project-sh"
         src="https://raw.githubusercontent.com/jbrown307/portfolio_CertProject/master/survey-form_CertProject_sh.png">
@@ -110,15 +117,15 @@
     
     <a href="https://github.com/jbrown307?tab=repositories"
     target="_blank">
-    <button>Show all</button></a>
+    <button>Show All</button></a>
   </section>
 
   <!---------- social ---------->
   <section id="social_container">
 
     <div class="social-text">
-      <h2>Let's work together...</h2>
-      <p>Let's get in touch!</p>
+      <h2>Let's Build Something Together...</h2>
+      <p>But first, let's get in touch!</p>
     </div>
 
     <div class="social-links_container">
@@ -174,7 +181,6 @@
   <footer>
     <section class="footer">
       <p>*This is not an actual portfolio. All linked projects are part of freeCodeCamp's Responsive Web Design certification course</p>
-      <p>*Created for freeCodeCamp</p>
     </section>
   </footer>
 </body>
