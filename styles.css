@@ -1,5 +1,5 @@
 /* TODO
-- fix gird to have equal amount of projects on each row 
+- 
 - 
 */
 
@@ -22,7 +22,7 @@ img {
 }
 
 /* ---------- navbar ---------- */
-#navbar-mainContainer {
+#navbar {
     border: solid 1px red;
     background-color: lightblue;
 
@@ -31,7 +31,7 @@ img {
     z-index: 999;
 
     width: 100%;
-    padding: 0.75rem;
+    padding: 1rem;
     
     display: flex;
     justify-content: end;
@@ -55,6 +55,8 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    
 }
 
         .welcome_headings {
@@ -81,11 +83,10 @@ img {
 
             width: 50%;
             padding: 1rem;
-
         }
 
     /* ---------- projects ---------- */
-    #projects-mainContainer {
+    #projects {
         border: solid 1px red;
         background-color: lightblue;
 
@@ -95,10 +96,11 @@ img {
         gap: 1rem;
         padding: 1rem;
 
-        
     }
         .projects-text {
             border: solid 1px blue;
+
+            text-align: center;
           
         }
         
@@ -187,6 +189,42 @@ img {
     display: flex;
     justify-content:space-evenly;
 }
+
+/* ---------- media query ---------- */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) { 
+
+    /* ---------- general ---------- */
+    body {
+        padding-top: 3rem;
+    }
+    
+    /* ---------- welcome ----------*/
+    .welcome_container {
+        height: 100vh;
+    }
+        
+        .welcome_image {
+            width: 50%;
+        }
+    
+            .welcome_text {
+                display: none;
+        }
+    
+    /* ---------- projects ---------- */
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    
+    /* ---------- social ---------- */
+    .social-links_container {
+        width: fit-content;
+    }
+
+}
+
+
 
 
 
