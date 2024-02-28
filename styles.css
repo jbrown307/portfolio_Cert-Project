@@ -29,6 +29,10 @@ a {
     text-decoration: none;
     color: black;
 }
+    
+    a:hover {
+        color:var(--accent-color2);
+    }
 
 button {
     background-color: var(--accent-color1);
@@ -65,10 +69,6 @@ button {
         font-size: 2rem;
     }
 
-        a:hover {
-            color:var(--accent-color2);
-        }
-
 /* ---------- welcome ----------*/
 #welcome-section {
     /* border: solid 1px red; */
@@ -89,29 +89,29 @@ button {
     flex-direction: column;
 }
 
-        .welcome_headings {
-            /* border: solid 1px blue; */
+    .welcome_headings {
+        /* border: solid 1px blue; */
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 75%;
-            padding: 1rem;
-            font-size: 3rem;
-            text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+        padding: 1rem;
+        font-size: 3rem;
+        text-align: center;
         }
 
-            .welcome_headings > p {
+        .welcome_headings > p {
                 font-style: italic;
                 font-size: 2rem;
             }
 
-        .welcome_image {
-            /* border: solid 1px blue; */
+    .welcome_image {
+        /* border: solid 1px blue; */
 
-            padding: 1rem;
-            width: 30%;
+        padding: 1rem;
+        width: 30%;
         }
 
     /* ---------- projects ---------- */
@@ -229,12 +229,12 @@ button {
     /* ---------- footer ---------- */
     .footer {
     /* border: solid 1px red; */
-    background-color: #d7dedc;
-    height: 5rem;
-    font-style: italic;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 1rem;
+        background-color: #d7dedc;
+        height: 5rem;
+        font-style: italic;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 1rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -253,7 +253,14 @@ button {
         padding: 0.5rem;
         border-radius: 0.5rem;
     }
-    
+        button:hover {
+            transform: none;
+            transition-duration: none;
+        }
+
+    a:hover {
+        color: black;
+        }
     /* ---------- navbar ---------- */
     #navbar {
         width: 100%;
@@ -290,7 +297,6 @@ button {
     /* ---------- projects ---------- */
     .project-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
         width: 85%;
     }
 
@@ -301,27 +307,36 @@ button {
     .project-title {
         text-align: center;
         padding: 0.5rem;
-
         font-size: 1rem;
     }
 
     .project-grid-item {
         padding: 1rem;
     }
+
+        .project-grid-item:hover {
+            background-color: var(--accent-color2);
+            opacity: 100%;
+            transform: none;
+            transition-duration: none;
+        }
     
     /* ---------- social ---------- */
     .social-links_container {
         display: flex;
         flex-direction: column;
         gap:1rem;
-
         width: fit-content;
-        
     }
 
         .social-text {
             font-size: 1rem;
         }
+
+            .social-link_flexbox:hover {
+                transition-duration: none;
+                transform: none;
+            }
 
     /* ---------- footer ---------- */
         .footer {
@@ -329,7 +344,6 @@ button {
             font-size: 0.5rem;
             line-height: 1rem;
         }
-
 }
 
 
