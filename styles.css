@@ -48,6 +48,13 @@ button {
         transition-duration: 500ms;
     }
 
+span {
+ text-decoration: underline;
+}
+    span:hover {
+        background-color: var(--nav-color);
+    }
+
 /* ---------- navbar ---------- */
 #navbar {
     /* border: solid 1px red; */
